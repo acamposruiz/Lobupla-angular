@@ -12,4 +12,4 @@ app.get('/', function(req, res){
   res.sendFile('./index.html', {"root": __dirname});
 });
 
-app.listen(3008);
+app.listen(3000);
