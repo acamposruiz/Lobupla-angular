@@ -16,6 +16,11 @@
         templateUrl: 'views/main.html',
         controller:'MainCtrl'
       })
+      .state('home', {
+        url: '/home',
+        templateUrl: 'views/home.html',
+        controller: 'HomeCtrl'
+      })
   })
 
 
