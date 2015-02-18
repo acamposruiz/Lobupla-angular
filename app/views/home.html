@@ -1,7 +1,8 @@
 <p>This is the home view.</p>
 
+<input type="search" ng-model="address">
+<button ng-click="getCoordetades(address)">Send</button>
+
 <ul>
-<li>{{items.length}}</li>
-<li>{{items.0 | json}}</li>
-	<li ng-repeat="item in items">{{item}}</li>
+	<li ng-repeat="item in items">{{item.name}}</li>
 </ul>
