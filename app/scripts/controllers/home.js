@@ -24,8 +24,11 @@ angular.module('lobuplaApp')
 	})
   .controller('HomeCtrl', function ($scope, $http, $cookies) {
   	$scope.items = [];
-  	$scope.showLatest = false;
-  	$scope.toggleLatest = function(){$scope.showLatest = !$scope.showLatest; };
+  	$scope.showLatest = ($cookies.showLatest == "true")? true: false;
+  	$scope.toggleLatest = function(){
+  		$scope.showLatest = !$scope.showLatest; 
+  		$cookies.showLatest = $scope.showLatest.toString(); 
+  	};
   	// Retrieving a cookie
   	$scope.lastestSearchs = ($cookies.lastestSearchs)? JSON.parse($cookies.lastestSearchs): null;
   	if (angular.isArray($scope.lastestSearchs)) {
@@ -86,7 +89,5 @@ angular.module('lobuplaApp')
 						  $scope.items = data.response.venues;
 						});
 				});
-				
   	}
-  	
   });
