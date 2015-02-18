@@ -9,9 +9,51 @@ angular.module('lobuplaApp')
 			v: '20150217'
 		});
 	})
-  .controller('HomeCtrl', function ($scope, $http) {
+	.directive('ngEnter', function () {
+	    return function (scope, element, attrs) {
+	        element.bind("keydown keypress", function (event) {
+	            if(event.which === 13) {
+	                scope.$apply(function (){
+	                    scope.$eval(attrs.ngEnter);
+	                });
+
+	                event.preventDefault();
+	            }
+	        });
+	    };
+	})
+  .controller('HomeCtrl', function ($scope, $http, $cookies) {
   	$scope.items = [];
+  	$scope.showLatest = false;
+  	$scope.toggleLatest = function(){$scope.showLatest = !$scope.showLatest; };
+  	// Retrieving a cookie
+  	$scope.lastestSearchs = ($cookies.lastestSearchs)? JSON.parse($cookies.lastestSearchs): null;
+  	if (angular.isArray($scope.lastestSearchs)) {
+	  	$scope.address = $scope.lastestSearchs[0];
+  	};
+
+  	$scope.removeAddress = function(index) {
+  		$scope.lastestSearchs.splice(index,1);
+  		$cookies.lastestSearchs = JSON.stringify($scope.lastestSearchs);
+  	};
+
+  	$scope.research = function(index) {
+  		$scope.getCoordetades($scope.lastestSearchs[index]);
+  	};
+
   	$scope.getCoordetades = function(address) {
+  		var lastestSearchs = ($cookies.lastestSearchs)? JSON.parse($cookies.lastestSearchs): null;
+  		if (angular.isArray(lastestSearchs)) {
+  			$scope.lastestSearchs =  lastestSearchs;
+  			if ($scope.lastestSearchs.indexOf(address) != -1) {
+  				$scope.lastestSearchs.splice($scope.lastestSearchs.indexOf(address),1);
+  			};
+  			$scope.lastestSearchs.unshift(address);
+  			$cookies.lastestSearchs = JSON.stringify($scope.lastestSearchs);
+  		} 
+  		else if (!lastestSearchs || !angular.isArray(lastestSearchs)) {
+  			$cookies.lastestSearchs = JSON.stringify([address]);
+  		}
 	  	$http({
 							url: 'http://maps.googleapis.com/maps/api/geocode/json', 
 							params: {

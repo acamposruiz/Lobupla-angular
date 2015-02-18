@@ -1,6 +1,18 @@
-<p>This is the home view.</p>
+<p>Input any address to locate all you want!</p>
 
-<input type="search" ng-model="address">
+<h3 ng-click="toggleLatest()">
+	Latest locations 
+	<span ng-show="!showLatest">>>></span>
+	<span ng-show="showLatest"><<<</span>
+</h3>
+<ol ng-show="showLatest">
+	<li ng-repeat="address in lastestSearchs">
+		{{address}} <button ng-click="removeAddress($index)">X</button>
+		<button ng-click="research($index)">Research</button>
+	</li>
+</ol>
+
+<input ng-enter="getCoordetades(address)" type="search" ng-model="address">
 <button ng-click="getCoordetades(address)">Send</button>
 
 <ul>
