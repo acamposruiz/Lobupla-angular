@@ -1,1 +1,7 @@
 <p>This is the home view.</p>
+
+<ul>
+<li>{{items.length}}</li>
+<li>{{items.0 | json}}</li>
+	<li ng-repeat="item in items">{{item}}</li>
+</ul>
