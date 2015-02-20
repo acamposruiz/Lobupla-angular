@@ -14,17 +14,59 @@ angular.module('lobuplaApp')
 	        });
 	    };
 	})
-	// .factory('venuesFactory', function($http) {
-	//  return{
-	//     getVenues : function(address) {
-	//         return $http({
-	//             url: 'content/test_data.json',
-	//             method: 'GET'
-	//         })
-	//     }
-	//  }
-	// })
-  .controller('HomeCtrl', function ($scope, $http, $cookies, $q) {
+	.factory('getCoordinates', function($http, $q) {
+	 return{
+	    fromAddress : function(address) {
+  	    var deferred = $q.defer();
+
+  	    $http({
+					url: 'http://maps.googleapis.com/maps/api/geocode/json', 
+					params: {
+						address: address,
+						components:'country:ES'
+					}, 
+					method: 'GET', 
+					//data: data, 
+					headers: angular.extend({
+						'X-Requested-With': undefined
+					})
+				}).
+				success(function(data){
+  	    	deferred.resolve(data);
+				});
+
+  	    return deferred.promise;
+	    }
+	 }
+	})
+	.factory('getVenues', function($http, $q) {
+	 return{
+	    fromCoordinates : function(data) {
+  	    var deferred = $q.defer();
+
+      	$http({
+					url: 'https://api.foursquare.com/v2/venues/search', 
+					params: {
+						client_id:'WU3OIROB5N3J1U3JPWWP0EUVICAZTMDCL2MUFLM2RKZ4HZFO',
+						client_secret:'YF3BCWYDRXLSRUOSJ24WDBKWFZMYDGS1EYF5TSHM2O35VACU',
+						ll: data.results[0].geometry.location.lat + ',' + data.results[0].geometry.location.lng,
+						v: '20150217'
+					}, 
+					method: 'GET', 
+					//data: data, 
+					headers: angular.extend({
+						'X-Requested-With': undefined
+					})
+				}).
+				success(function(data){
+  	    	deferred.resolve(data.response.venues);
+				});
+
+  	    return deferred.promise;
+	    }
+	 }
+	})
+  .controller('HomeCtrl', function ($scope, $http, $cookies, $q, getCoordinates, getVenues) {
   	var setVenues = function(venues) {  
   	    $scope.venues = venues;
   	}
@@ -65,55 +107,8 @@ angular.module('lobuplaApp')
   	$scope.updateVenues = function(address) {
   		updateLastestSearchs(address);
 
-		  getCoordinates(address)  
-  	    .then(getVenuesFromCoordinates)
+		  getCoordinates.fromAddress(address)  
+  	    .then(getVenues.fromCoordinates)
   	    .then(setVenues);
   	};
-
-  	function getCoordinates(address) {  
-  	    var deferred = $q.defer();
-
-  	    $http({
-					url: 'http://maps.googleapis.com/maps/api/geocode/json', 
-					params: {
-						address: address,
-						components:'country:ES'
-					}, 
-					method: 'GET', 
-					//data: data, 
-					headers: angular.extend({
-						'X-Requested-With': undefined
-					})
-				}).
-				success(function(data){
-  	    	deferred.resolve(data);
-				});
-
-  	    return deferred.promise;
-  	}
-
-  	function getVenuesFromCoordinates(data) {  
-  	    var deferred = $q.defer();
-
-      	$http({
-					url: 'https://api.foursquare.com/v2/venues/search', 
-					params: {
-						client_id:'WU3OIROB5N3J1U3JPWWP0EUVICAZTMDCL2MUFLM2RKZ4HZFO',
-						client_secret:'YF3BCWYDRXLSRUOSJ24WDBKWFZMYDGS1EYF5TSHM2O35VACU',
-						ll: data.results[0].geometry.location.lat + ',' + data.results[0].geometry.location.lng,
-						v: '20150217'
-					}, 
-					method: 'GET', 
-					//data: data, 
-					headers: angular.extend({
-						'X-Requested-With': undefined
-					})
-				}).
-				success(function(data){
-  	    	deferred.resolve(data.response.venues);
-				});
-
-  	    return deferred.promise;
-  	}
-
   });
