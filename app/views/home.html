@@ -14,9 +14,9 @@
 </ol>
 
 <p>Input any address to locate all you want!</p>
-<input ng-enter="sendRequest(address)" type="search" ng-model="address">
-<button ng-click="sendRequest(address)">Send</button>
+<input ng-enter="updateVenues(address)" type="search" ng-model="address">
+<button ng-click="updateVenues(address)">Send</button>
 
-<ul>
+<ol>
 	<li ng-repeat="item in venues">{{item.name}}</li>
-</ul>
+</ol>
