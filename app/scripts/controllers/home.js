@@ -32,7 +32,7 @@ angular.module('lobuplaApp')
 					})
 				}).
 				success(function(data){
-  	    	deferred.resolve(data);
+  	    	deferred.resolve(data.results[0].geometry.location.lat + ',' + data.results[0].geometry.location.lng);
 				});
 
   	    return deferred.promise;
@@ -41,7 +41,7 @@ angular.module('lobuplaApp')
 	})
 	.factory('getVenues', function($http, $q) {
 	 return{
-	    fromCoordinates : function(data) {
+	    fromCoordinates : function(coordinates) {
   	    var deferred = $q.defer();
 
       	$http({
@@ -49,7 +49,7 @@ angular.module('lobuplaApp')
 					params: {
 						client_id:'WU3OIROB5N3J1U3JPWWP0EUVICAZTMDCL2MUFLM2RKZ4HZFO',
 						client_secret:'YF3BCWYDRXLSRUOSJ24WDBKWFZMYDGS1EYF5TSHM2O35VACU',
-						ll: data.results[0].geometry.location.lat + ',' + data.results[0].geometry.location.lng,
+						ll: coordinates,
 						v: '20150217'
 					}, 
 					method: 'GET', 
