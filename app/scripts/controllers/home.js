@@ -66,7 +66,7 @@ angular.module('lobuplaApp')
 	    }
 	 }
 	})
-  .controller('HomeCtrl', function ($scope, $http, $cookies, $q, getCoordinates, getVenues) {
+  .controller('HomeCtrl', function ($scope, $cookies, getCoordinates, getVenues) {
   	var setVenues = function(venues) {  
   	    $scope.venues = venues;
   	}
