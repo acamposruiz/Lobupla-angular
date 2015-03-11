@@ -10,7 +10,7 @@
     "angular-ui-router": "*" 
   },
   "devDependencies": {
-    "angular-mocks": "~1.0.7",
+    "angular-mocks": "*",
     "angular-scenario": "~1.0.7"
   }
 }

@@ -3,6 +3,7 @@
 
 module.exports = function(config) {
   config.set({
+    browserNoActivityTimeout: 50000,
     // base path, that will be used to resolve files and exclude
     basePath: '',
 
@@ -12,15 +13,25 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'app/bower_components/angular/angular.js',
+      'app/bower_components/jQuery/dist/jquery.js',
+      'app/bower_components/angular-cookies/angular-cookies.js',
+      'app/bower_components/angular-resource/angular-resource.js',
+      'app/bower_components/angular-sanitize/angular-sanitize.js',
+      // 'app/bower_components/angular-scenario/angular-scenario.js',
+      'app/bower_components/angular-ui-router/release/angular-ui-router.js',
       'app/bower_components/angular-mocks/angular-mocks.js',
       'app/scripts/*.js',
       'app/scripts/**/*.js',
+      'test/spec/**/*.js',
       'test/mock/**/*.js',
-      'test/spec/**/*.js'
     ],
 
     // list of files / patterns to exclude
-    exclude: [],
+    exclude: [
+      'test/spec/controllers/main.js',
+      'test/spec/controllers/home.js',
+      'test/spec/controllers/home2.js',
+    ],
 
     // web server port
     port: 8080,
@@ -31,7 +42,7 @@ module.exports = function(config) {
 
 
     // enable / disable watching file and executing tests whenever any file changes
-    autoWatch: false,
+    autoWatch: true,
 
 
     // Start these browsers, currently available:

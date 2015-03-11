@@ -66,8 +66,8 @@ angular.module('lobuplaApp')
 	    }
 	 }
 	})
-  .controller('HomeCtrl', function ($scope, $cookies, getCoordinates, getVenues) {
-  	var setVenues = function(venues) {  
+  .controller('HomeCtrl', function ($scope, $cookies, $q, getCoordinates, getVenues, $http) {
+  	$scope.setVenues = function(venues) { 
   	    $scope.venues = venues;
   	}
 
@@ -101,14 +101,18 @@ angular.module('lobuplaApp')
 
   	$scope.research = function(index) {
   		$scope.address = $scope.lastestSearchs[index];
-  		$scope.updateVenues($scope.address);
+  		$scope.updateVenues($scope.address).then($scope.setVenues);
   	};
 
   	$scope.updateVenues = function(address) {
+  		var deferred = $q.defer();
+
   		updateLastestSearchs(address);
 
 		  getCoordinates.fromAddress(address)  
   	    .then(getVenues.fromCoordinates)
-  	    .then(setVenues);
+  	    .then(deferred.resolve);
+
+  	    return deferred.promise;
   	};
   });
