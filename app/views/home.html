@@ -1,6 +1,6 @@
 
 <h4 ng-class="{on:showLatest, off:!showLatest}" ng-click="toggleLatest()">
-	 
+
 	<span ng-show="!showLatest">View latest locations</span>
 	<span ng-show="!showLatest">----></span>
 	<span ng-show="showLatest">Hide latest locations</span>
@@ -14,8 +14,8 @@
 </ol>
 
 <p>Input any address to locate all you want!</p>
-<input ng-enter="updateVenues(address)" type="search" ng-model="address">
-<button ng-click="updateVenues(address)">Send</button>
+<input ng-enter="search(address)" type="search" ng-model="address">
+<button class="send" id="send" ng-click="search(address)">Send</button>
 
 <ol>
 	<li ng-repeat="item in venues">{{item.name}}</li>

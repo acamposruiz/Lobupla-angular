@@ -1,7 +1,7 @@
 'use strict';
 
 describe('Controller: HomeCtrl', function () {
-  jasmine.DEFAULT_TIMEOUT_INTERVAL = jasmine.getEnv().defaultTimeoutInterval = 50000;
+  jasmine.DEFAULT_TIMEOUT_INTERVAL = jasmine.getEnv().defaultTimeoutInterval = 30000;
 
   // load the controller's module
   beforeEach(module('lobuplaApp'));
@@ -10,8 +10,9 @@ describe('Controller: HomeCtrl', function () {
        scope;
 
   // Initialize the controller and a mock scope
-  beforeEach(inject(function ($controller, $rootScope) {
+  beforeEach(inject(function ($httpBackend, $controller, $rootScope, $http) {
     scope = $rootScope.$new();
+    scope.$http = $http;
     HomeCtrl = $controller('HomeCtrl', {
       $scope: scope
     });
@@ -30,7 +31,7 @@ describe('Controller: HomeCtrl', function () {
 
   it("cannot change timeout", function(done) {
 
-    $http.get("http://localhost:8082/app/#/home").then(function(data){
+    scope.$http.get("http://localhost:8082").then(function(data){
 
        expect(body).toEqual("hello world");
 

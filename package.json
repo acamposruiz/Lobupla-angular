@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "dependencies": {
     "express": "^4.11.2",
+    "grunt-contrib-imagemin": "^0.9.3",
     "http": "0.0.0"
   },
   "devDependencies": {
