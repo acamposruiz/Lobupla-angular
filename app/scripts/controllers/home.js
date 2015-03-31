@@ -37,7 +37,7 @@ angular.module('lobuplaApp')
 
   	    return deferred.promise;
 	    }
-	 }
+	 };
 	})
 	.factory('getVenues', function($http, $q) {
 	 return{
@@ -64,60 +64,46 @@ angular.module('lobuplaApp')
 
   	    return deferred.promise;
 	    }
-	 }
+	 };
 	})
-  .controller('HomeCtrl', function ($scope, $cookies, $q, getCoordinates, getVenues, $http) {
-  	$scope.setVenues = function(venues) {
-  	    $scope.venues = venues;
-  	};
+  .controller('HomeCtrl', function ($scope, $cookies, $q, getCoordinates, getVenues) {
 
-  	var updateLastestSearchs = function(address) {
-  		if ($cookies.lastestSearchs) {
-  			$scope.lastestSearchs = JSON.parse($cookies.lastestSearchs);
-  			if ($scope.lastestSearchs.indexOf(address) != -1) {
-  				$scope.lastestSearchs.splice($scope.lastestSearchs.indexOf(address),1);
-  			};
-  			$scope.lastestSearchs.unshift(address);
-  			$cookies.lastestSearchs = JSON.stringify($scope.lastestSearchs);
-  		}
-  		else{
-  			$cookies.lastestSearchs = JSON.stringify([address]);
-  		};
-  	};
+    $scope.showLatest = ($cookies.showLatest === 'true')? true: false;
+    $scope.lastestSearchs = ($cookies.lastestSearchs)? JSON.parse($cookies.lastestSearchs): null;
 
-  	$scope.venues = [];
-  	$scope.showLatest = ($cookies.showLatest == "true")? true: false;
-  	$scope.lastestSearchs = ($cookies.lastestSearchs)? JSON.parse($cookies.lastestSearchs): null;
+    $scope.venues = {
+        search: function(address) {
+            $scope.address = address;
+            $scope.venues.searchCache.updateLastestSearchs(address);
 
-  	$scope.toggleLatest = function(){
-  		$scope.showLatest = !$scope.showLatest;
-  		$cookies.showLatest = $scope.showLatest.toString();
-  	};
-
-  	$scope.removeAddress = function(index) {
-  		$scope.lastestSearchs.splice(index,1);
-  		$cookies.lastestSearchs = JSON.stringify($scope.lastestSearchs);
-  	};
-
-    $scope.research = function(index) {
-        $scope.address = $scope.lastestSearchs[index];
-        $scope.updateVenues($scope.address).then($scope.setVenues);
+            getCoordinates.fromAddress(address)
+                .then(getVenues.fromCoordinates)
+                .then(function(venues) {
+                    $scope.venues.context = venues;
+                });
+        },
+        searchCache: {
+            updateLastestSearchs: function(address) {
+                if ($cookies.lastestSearchs) {
+                    $scope.lastestSearchs = JSON.parse($cookies.lastestSearchs);
+                    if ($scope.lastestSearchs.indexOf(address) !== -1) {
+                        $scope.lastestSearchs.splice($scope.lastestSearchs.indexOf(address),1);
+                    }
+                    $scope.lastestSearchs.unshift(address);
+                    $cookies.lastestSearchs = JSON.stringify($scope.lastestSearchs);
+                }
+                else{
+                    $cookies.lastestSearchs = JSON.stringify([address]);
+                }
+            },
+            toggleLatest: function(){
+                $scope.showLatest = !$scope.showLatest;
+                $cookies.showLatest = $scope.showLatest.toString();
+            },
+            removeAddress: function(index) {
+                $scope.lastestSearchs.splice(index,1);
+                $cookies.lastestSearchs = JSON.stringify($scope.lastestSearchs);
+            }
+        }
     };
-
-    $scope.search = function(address) {
-        $scope.address = address;
-        $scope.updateVenues($scope.address).then($scope.setVenues);
-    };
-
-  	$scope.updateVenues = function(address) {
-  		var deferred = $q.defer();
-
-  		updateLastestSearchs(address);
-
-		  getCoordinates.fromAddress(address)
-  	    .then(getVenues.fromCoordinates)
-  	    .then(deferred.resolve);
-
-  	    return deferred.promise;
-  	};
   });
