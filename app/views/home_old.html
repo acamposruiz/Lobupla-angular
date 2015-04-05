@@ -1,0 +1,22 @@
+
+<h4 ng-class="{on:showLatest, off:!showLatest}" ng-click="venues.searchCache.toggleLatest()">
+
+	<span ng-show="!showLatest">View latest locations</span>
+	<span ng-show="!showLatest">----></span>
+	<span ng-show="showLatest">Hide latest locations</span>
+	<span ng-show="showLatest"><----</span>
+</h4>
+<ol ng-show="showLatest">
+	<li ng-repeat="address in lastestSearchs">
+		{{address}} <button ng-click="venues.searchCache.removeAddress($index)">X</button>
+		<button ng-click="venues.search(lastestSearchs[$index])">Research</button>
+	</li>
+</ol>
+
+<p>Input any address to locate all you want!</p>
+<input ng-enter="venues.search(address)" type="search" ng-model="address">
+<button class="send" id="send" ng-click="venues.search(address)">Send</button>
+
+<ol>
+	<li ng-repeat="item in venues.context">{{item.name}}</li>
+</ol>

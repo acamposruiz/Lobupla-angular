@@ -1,0 +1,46 @@
+.display-inline {
+  display: inline;
+}
+.display-block {
+  display: block;
+}
+.display-table {
+  display: table;
+}
+
+
+
+.margin5 {
+  margin: 5px;
+}
+.margin10 {
+  margin: 10px;
+}
+.margin20 {
+  margin: 20px;
+}
+.margin30 {
+  margin: 30px;
+}
+.margin40 {
+  margin: 40px;
+}
+.margin50 {
+  margin: 50px;
+}
+
+.margin15 {
+  margin: 15px;
+}
+.margin25 {
+  margin: 25px;
+}
+.margin35 {
+  margin: 35px;
+}
+.margin45 {
+  margin: 45px;
+}
+.margin55 {
+  margin: 55px;
+}

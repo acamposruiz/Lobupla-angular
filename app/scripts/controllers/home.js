@@ -38,16 +38,20 @@ angular.module('lobuplaApp')
 })
 .factory('getVenues', function($http, $q) {
   'use strict';
+  var client_id = 'WU3OIROB5N3J1U3JPWWP0EUVICAZTMDCL2MUFLM2RKZ4HZFO';
+  var client_secret = 'YF3BCWYDRXLSRUOSJ24WDBKWFZMYDGS1EYF5TSHM2O35VACU';
+  var apiVersion = '20150217';
+    
   return{
-    fromCoordinates : function(coordinates) {
+    fromCoordinates: function(coordinates) {
       var deferred = $q.defer();
       $http({
         url: 'https://api.foursquare.com/v2/venues/search',
         params: {
-          client_id:'WU3OIROB5N3J1U3JPWWP0EUVICAZTMDCL2MUFLM2RKZ4HZFO',
-          client_secret:'YF3BCWYDRXLSRUOSJ24WDBKWFZMYDGS1EYF5TSHM2O35VACU',
+          client_id: client_id,
+          client_secret: client_secret,
           ll: coordinates,
-          v: '20150217'
+          v: apiVersion
         },
         method: 'GET',
         //data: data,
@@ -59,47 +63,60 @@ angular.module('lobuplaApp')
         deferred.resolve(data.response.venues);
       });
       return deferred.promise;
+    },
+    getImages: function(venue, size) {
+      var deferred = $q.defer();
+      $http({
+        url: 'https://api.foursquare.com/v2/venues/' + venue.id + '/photos',
+        params: {
+          client_id: client_id,
+          client_secret: client_secret,
+          v: apiVersion
+        },
+        method: 'GET',
+        //data: data,
+        headers: angular.extend({
+          'X-Requested-With': undefined
+        })
+      }).
+        success(function(data){
+          try {
+            if(data.response.photos.count > 0){
+              var images = [];
+              angular.forEach(data.response.photos.items, function(item, key) {
+                images.push(item.prefix + size + item.suffix);
+              });
+              deferred.resolve(images);
+            }
+            else {
+              deferred.resolve(null);
+            }
+          }
+          catch(err) {
+            deferred.resolve(null);
+          }
+        });
+      return deferred.promise;
     }
   };
 })
 .controller('HomeCtrl', function ($scope, $cookies, $q, getCoordinates, getVenues) {
   'use strict';
-  $scope.showLatest = ($cookies.showLatest === 'true')? true: false;
-  $scope.lastestSearchs = ($cookies.lastestSearchs)? JSON.parse($cookies.lastestSearchs): null;
 
-  $scope.venues = {
+  $scope.$root.venues = {
     search: function(address) {
       $scope.address = address;
-      $scope.venues.searchCache.updateLastestSearchs(address);
 
       getCoordinates.fromAddress(address)
         .then(getVenues.fromCoordinates)
         .then(function(venues) {
           $scope.venues.context = venues;
+          angular.forEach(venues, function(venue, key) {
+            getVenues.getImages(venue, '1280x500').then(function(images){
+              $scope.venues.context[key].images = images;
+            });
+          });
         });
-    },
-    searchCache: {
-      updateLastestSearchs: function(address) {
-        if ($cookies.lastestSearchs) {
-          $scope.lastestSearchs = JSON.parse($cookies.lastestSearchs);
-          if ($scope.lastestSearchs.indexOf(address) !== -1) {
-            $scope.lastestSearchs.splice($scope.lastestSearchs.indexOf(address),1);
-          }
-          $scope.lastestSearchs.unshift(address);
-          $cookies.lastestSearchs = JSON.stringify($scope.lastestSearchs);
-        }
-        else{
-          $cookies.lastestSearchs = JSON.stringify([address]);
-        }
-      },
-      toggleLatest: function(){
-        $scope.showLatest = !$scope.showLatest;
-        $cookies.showLatest = $scope.showLatest.toString();
-      },
-      removeAddress: function(index) {
-        $scope.lastestSearchs.splice(index,1);
-        $cookies.lastestSearchs = JSON.stringify($scope.lastestSearchs);
-      }
     }
   };
 });

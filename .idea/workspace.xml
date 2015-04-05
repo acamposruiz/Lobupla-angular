@@ -2,11 +2,315 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48b8fa18-2dda-4661-995f-34bd5d96af89" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Antonio.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/api.lobupla2.iml" afterPath="$PROJECT_DIR$/.idea/api.lobupla2.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/patterns/01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/patterns/02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/patterns/03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/patterns/04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/patterns/05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/patterns/06.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/patterns/07.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/patterns/08.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/patterns/09.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/patterns/10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/patterns/11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/patterns/12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/patterns/13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/patterns/14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/patterns/15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/patterns/16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/patterns/17.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/patterns/18.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/patterns/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/owl-carousel/AjaxLoader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/elegant_font/html_css/fonts/ElegantIcons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/elegant_font/html_css/fonts/ElegantIcons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/elegant_font/html_css/fonts/ElegantIcons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/font-awesome/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/patterns/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/arrow_large_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/arrow_large_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/arrow_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/arrow_left2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/arrow_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/arrow_right2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/arrowleft.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/arrowright.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/arrows.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/bg01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/bg02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/bg03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/bg04.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/bg05.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/bg06.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/bg07.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/bg08.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/bg09.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/bg10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/bg11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/bg12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/bg13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/bg14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/bg15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/bg16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/bg17.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/bg18.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/bg19.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/black50.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/blog01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/blog02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/blog03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/blog04.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/boxed_bgtile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/bullet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/bullet_boxed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/bullets.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/bullets.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/bullets2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/raty/img/cancel-off.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/raty/img/cancel-on.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/client01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/client01a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/client02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/client02a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/client03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/client03a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/client04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/client04a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/client05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/client05a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/client06.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/client06a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/client07.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/client07a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/client08.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/client08a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/coloredbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/cursor_move.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/images/decor_inside.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/images/decor_inside_white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/images/decor_testimonial.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/images/gradient/g30.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/images/gradient/g40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/owl-carousel/grabbing.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/grain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/gridtile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/gridtile_3x3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/gridtile_3x3_white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/gridtile_white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/img01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/large_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/large_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/loader2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/logo-light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/navigdots.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/navigdots_bgtile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/office1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/office2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/office3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/office4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/office5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/p01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/p02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/p03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/p04.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/p05.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/p06.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/p07.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/p08.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/p09.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/p10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/p11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/p12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/p13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/preloader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/preloader_light.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/font/revicons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/font/revicons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/font/revicons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/shadow1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/shadow2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/shadow3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/shop01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/shop02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/shop03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/shop04.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/shop05.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/shop11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/shop12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/shop13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/shop14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/shop21.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/shop22.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/shop23.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/shop24.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/shop25.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/small_arrows.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/small_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/small_left_boxed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/small_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/small_right_boxed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rangeSlider/img/sprite-skin-flat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rangeSlider/img/sprite-skin.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/raty/img/star-half.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/raty/img/star-off.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/raty/img/star-on.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/team1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/team2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/team3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/team4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/team5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/images/demo/team6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/timer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/timerdot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/transparent.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/assets/white50.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/videos/work.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/videos/work.mp4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/videos/work.webm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/elegant_font/html_css/fonts/ElegantIcons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/tweetie/api/twitteroauth/OAuth.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/blog_grid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/blog_grid_sidebar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/blog_list_large.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/blog_list_small.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/blog_masonry.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/blog_masonry_sidebar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/blog_post.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/blog_post_sidebar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/css/colors/blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/css/colors/blue_3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/css/colors/blue_grey.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/css/colors/blue_light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/bootstrap/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/bootstrap/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/css/boxed.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/css/colors.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/tweetie/api/config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/php/contact.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/css/colors/cyan.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/css/dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/font-awesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/elegant_font/Licensing/gpl_license.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/css/colors/green.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/isotope/imagesloaded.pkgd.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/elegant_font/html_css/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/index_02.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/index_03.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/index_04.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/index_05.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/index_06.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/index_07.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/index_08.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/index_09.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/index_10.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/index_11.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/index_12.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/index_13.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/index_14.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/index_15.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rangeSlider/css/ion.rangeSlider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rangeSlider/js/ion.rangeSlider.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/isotope/isotope.pkgd.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/jflickrfeed.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/jquery/jquery-2.1.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/jquery.appear.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/jquery.countTo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/magnific-popup/jquery.magnific-popup.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/jquery.placeholder.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/raty/jquery.raty.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/sharrre/jquery.sharrre.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/jquery.simple-text-rotator.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/js/jquery.themepunch.enablelog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/js/jquery.themepunch.revolution.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/js/jquery.themepunch.tools.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/jquery.validate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/jquery.zoom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/magnific-popup/magnific-popup.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/elegant_font/Licensing/mit_license.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/css/colors/orange.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/owl-carousel/owl.carousel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/owl-carousel/owl.carousel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_403.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_404.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_about.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_about_2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_about_3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_about_4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_clients.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_contact.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_contact_2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_contact_3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_faq.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_faq_2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_pricing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_services.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_services_2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_services_3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_services_4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_sidebar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_sidebar_navigation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_sidebars.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_sign_in.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_sign_up.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_team.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_team_2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_team_3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/page_team_4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/portfolio.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/portfolio_2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/portfolio_3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/portfolio_4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/portfolio_boxed.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/portfolio_project_half.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/portfolio_project_sidebar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/portfolio_project_wide.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/portfolio_sidebar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/php/recaptchalib.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/css/colors/red.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/retina.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/font/revicons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/js/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/css/settings-ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/rs-plugin/css/settings.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/sharrre/sharrre.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/shop_account.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/shop_cart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/shop_checkout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/shop_product.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/shop_product_sidebar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/shop_products.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/shop_products_sidebar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/shortcodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/stellar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/sticky.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/elegant_font/html_css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/css/style2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/tweetie/api/tweet.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/tweetie/tweetie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/tweetie/tweetie.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/plugins/tweetie/api/twitteroauth/twitteroauth.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/palas/css/colors/yellow.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home.html" afterPath="$PROJECT_DIR$/app/views/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/home.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/spec/protactor-spec.js" afterPath="$PROJECT_DIR$/test/spec/protactor-spec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="api.lobupla2.iws" />
@@ -28,45 +332,106 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.5789474">
+              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.4">
-              <caret line="69" column="2" selection-start-line="69" selection-start-column="2" selection-end-line="69" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.11673152">
+              <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
               <folding>
                 <element signature="e#63#350#0" expanded="false" />
                 <element signature="e#399#1002#0" expanded="false" />
-                <element signature="e#1046#1726#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../_palas/palas/index.html">
+      <file leaf-file-name="home_old.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home_old.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-3.9473684">
+              <caret line="20" column="53" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/home.html">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8163266">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="protactor-spec.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/spec/protactor-spec.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.3026314">
+              <caret line="85" column="62" selection-start-line="85" selection-start-column="62" selection-end-line="85" selection-end-column="62" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bg01.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/palas/images/demo/bg01.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style2.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/palas/css/style2.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.8">
+              <caret line="18" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-9.0">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.4">
+              <caret line="14" column="29" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -81,8 +446,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/test/spec/protactor-spec.js" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/home.js" />
+        <option value="$PROJECT_DIR$/app/scripts/app.js" />
+        <option value="$PROJECT_DIR$/app/app.js" />
+        <option value="$PROJECT_DIR$/app/unname" />
+        <option value="$PROJECT_DIR$/app/palas/css/style.css" />
+        <option value="$PROJECT_DIR$/app/palas/css/style2.css" />
+        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/views/home.html" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/home.js" />
       </list>
     </option>
   </component>
@@ -100,10 +471,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="24" />
+    <option name="x" value="63" />
     <option name="y" value="22" />
-    <option name="width" value="1377" />
-    <option name="height" value="1079" />
+    <option name="width" value="1495" />
+    <option name="height" value="1150" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -147,8 +518,18 @@
               <option name="myItemId" value="api.lobupla2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="palas" />
+              <option name="myItemId" value="api.lobupla2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api.lobupla2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api.lobupla2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -162,11 +543,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="palas" />
+              <option name="myItemId" value="api.lobupla2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -181,6 +562,62 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="api.lobupla2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api.lobupla2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api.lobupla2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api.lobupla2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api.lobupla2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api.lobupla2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api.lobupla2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -191,14 +628,28 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../_palas/palas" />
     <property name="recentsLimit" value="5" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Antonio/Devel/api.lobupla/api.lobupla2/test/spec/protactor-spec.js" />
+    <property name="com.intellij.ide.scratch.NewScratchFileAction" value="AngularJS&#10;CSS" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/palas/css" />
+      <recent name="$PROJECT_DIR$/app/views" />
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.app.js">
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/api.lobupla2/app/index.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/app">
+      <method />
+    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
@@ -225,6 +676,16 @@
       <envs />
       <method />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.app.js" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.app.js" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -240,7 +701,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="24" y="22" width="1377" height="1079" extended-state="0" />
+    <frame x="63" y="22" width="1495" height="1150" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -248,7 +709,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25417575" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23411371" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -256,11 +717,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -279,6 +740,64 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/unname">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/palas/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_palas/palas/page_contact_3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index_old.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="3" selection-start-line="54" selection-start-column="3" selection-end-line="68" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -286,7 +805,7 @@
           <folding>
             <element signature="e#63#350#0" expanded="false" />
             <element signature="e#399#1002#0" expanded="false" />
-            <element signature="e#1046#1726#0" expanded="false" />
+            <element signature="e#1046#2803#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -303,7 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -314,7 +832,7 @@
           <folding>
             <element signature="e#63#350#0" expanded="false" />
             <element signature="e#399#1002#0" expanded="false" />
-            <element signature="e#1046#1726#0" expanded="false" />
+            <element signature="e#1046#2803#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -326,7 +844,7 @@
           <folding>
             <element signature="e#63#350#0" expanded="false" />
             <element signature="e#399#1002#0" expanded="false" />
-            <element signature="e#1046#1726#0" expanded="false" />
+            <element signature="e#1046#2803#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -338,7 +856,7 @@
           <folding>
             <element signature="e#63#350#0" expanded="false" />
             <element signature="e#399#1002#0" expanded="false" />
-            <element signature="e#1046#1726#0" expanded="false" />
+            <element signature="e#1046#2803#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -350,7 +868,7 @@
           <folding>
             <element signature="e#63#350#0" expanded="false" />
             <element signature="e#399#1002#0" expanded="false" />
-            <element signature="e#1046#1726#0" expanded="false" />
+            <element signature="e#1046#2803#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -362,7 +880,7 @@
           <folding>
             <element signature="e#63#350#0" expanded="false" />
             <element signature="e#399#1002#0" expanded="false" />
-            <element signature="e#1046#1726#0" expanded="false" />
+            <element signature="e#1046#2803#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -374,7 +892,7 @@
           <folding>
             <element signature="e#63#350#0" expanded="false" />
             <element signature="e#399#1002#0" expanded="false" />
-            <element signature="e#1046#1726#0" expanded="false" />
+            <element signature="e#1046#2803#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -386,7 +904,7 @@
           <folding>
             <element signature="e#63#350#0" expanded="false" />
             <element signature="e#399#1002#0" expanded="false" />
-            <element signature="e#1046#1726#0" expanded="false" />
+            <element signature="e#1046#2803#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -398,7 +916,7 @@
           <folding>
             <element signature="e#63#350#0" expanded="false" />
             <element signature="e#399#1002#0" expanded="false" />
-            <element signature="e#1046#1726#0" expanded="false" />
+            <element signature="e#1046#2803#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -410,7 +928,7 @@
           <folding>
             <element signature="e#63#350#0" expanded="false" />
             <element signature="e#399#1002#0" expanded="false" />
-            <element signature="e#1046#1726#0" expanded="false" />
+            <element signature="e#1046#2803#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -422,7 +940,7 @@
           <folding>
             <element signature="e#63#350#0" expanded="false" />
             <element signature="e#399#1002#0" expanded="false" />
-            <element signature="e#1046#1726#0" expanded="false" />
+            <element signature="e#1046#2803#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -434,7 +952,7 @@
           <folding>
             <element signature="e#63#350#0" expanded="false" />
             <element signature="e#399#1002#0" expanded="false" />
-            <element signature="e#1046#1726#0" expanded="false" />
+            <element signature="e#1046#2803#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -446,7 +964,7 @@
           <folding>
             <element signature="e#63#350#0" expanded="false" />
             <element signature="e#399#1002#0" expanded="false" />
-            <element signature="e#1046#1726#0" expanded="false" />
+            <element signature="e#1046#2803#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -473,14 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/bower_components/angular/angular.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-26.45768">
@@ -493,9 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.3040752">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -503,27 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8163266">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4">
-          <caret line="69" column="2" selection-start-line="69" selection-start-column="2" selection-end-line="69" selection-end-column="2" />
-          <folding>
-            <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#399#1002#0" expanded="false" />
-            <element signature="e#1046#1726#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -531,15 +1017,182 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../_palas/palas/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.5">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_palas/palas/blog_list_large.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.625">
+          <caret line="307" column="43" selection-start-line="0" selection-start-column="0" selection-end-line="711" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/palas/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index_old.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="3" selection-start-line="54" selection-start-column="3" selection-end-line="68" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../_palas/palas/page_contact_3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/unname">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/palas/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.4038463">
+          <caret line="90" column="11" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/palas/css/style2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.8">
+          <caret line="18" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/palas/images/demo/bg01.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.4">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home_old.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9473684">
+          <caret line="20" column="53" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.0">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3026314">
+          <caret line="85" column="62" selection-start-line="85" selection-start-column="62" selection-end-line="85" selection-end-column="62" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5789474">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11673152">
+          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+          <folding>
+            <element signature="e#63#350#0" expanded="false" />
+            <element signature="e#399#1002#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
