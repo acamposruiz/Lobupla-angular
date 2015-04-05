@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48b8fa18-2dda-4661-995f-34bd5d96af89" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home.html" afterPath="$PROJECT_DIR$/app/views/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/home.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/home.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/palas/css/style2.css" afterPath="$PROJECT_DIR$/app/palas/css/style2.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="api.lobupla2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +29,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.3552632">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state vertical-scroll-proportion="-2.7631578">
+              <caret line="14" column="135" selection-start-line="14" selection-start-column="135" selection-end-line="14" selection-end-column="135" />
               <folding />
             </state>
           </provider>
@@ -38,8 +39,8 @@
       <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.12451362">
-              <caret line="107" column="25" selection-start-line="107" selection-start-column="15" selection-end-line="107" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.2997003">
+              <caret line="87" column="49" selection-start-line="87" selection-start-column="49" selection-end-line="121" selection-end-column="5" />
               <folding>
                 <element signature="e#63#350#0" expanded="false" />
               </folding>
@@ -80,9 +81,9 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.2763157">
-              <caret line="84" column="89" selection-start-line="84" selection-start-column="89" selection-end-line="84" selection-end-column="89" />
-              <caret line="85" column="89" selection-start-line="85" selection-start-column="89" selection-end-line="85" selection-end-column="89" />
+            <state vertical-scroll-proportion="-8.618421">
+              <caret line="93" column="59" selection-start-line="93" selection-start-column="59" selection-end-line="93" selection-end-column="59" />
+              <caret line="95" column="60" selection-start-line="95" selection-start-column="60" selection-end-line="95" selection-end-column="60" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -144,10 +145,10 @@
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/unname" />
         <option value="$PROJECT_DIR$/app/palas/css/style.css" />
-        <option value="$PROJECT_DIR$/app/views/home.html" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/home.js" />
         <option value="$PROJECT_DIR$/app/palas/css/style2.css" />
         <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/home.js" />
+        <option value="$PROJECT_DIR$/app/views/home.html" />
       </list>
     </option>
   </component>
@@ -498,7 +499,7 @@
           <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2889#0" expanded="false" />
+            <element signature="e#394#3437#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -524,7 +525,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2889#0" expanded="false" />
+            <element signature="e#394#3437#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -535,7 +536,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2889#0" expanded="false" />
+            <element signature="e#394#3437#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -546,7 +547,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2889#0" expanded="false" />
+            <element signature="e#394#3437#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -557,7 +558,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2889#0" expanded="false" />
+            <element signature="e#394#3437#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -568,7 +569,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2889#0" expanded="false" />
+            <element signature="e#394#3437#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -579,7 +580,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2889#0" expanded="false" />
+            <element signature="e#394#3437#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -590,7 +591,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2889#0" expanded="false" />
+            <element signature="e#394#3437#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -601,7 +602,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2889#0" expanded="false" />
+            <element signature="e#394#3437#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -612,7 +613,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2889#0" expanded="false" />
+            <element signature="e#394#3437#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -623,7 +624,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2889#0" expanded="false" />
+            <element signature="e#394#3437#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -634,7 +635,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2889#0" expanded="false" />
+            <element signature="e#394#3437#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -645,7 +646,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2889#0" expanded="false" />
+            <element signature="e#394#3437#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -839,14 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3552632">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/palas/css/style2.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-32.4">
@@ -857,9 +850,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.2763157">
-          <caret line="84" column="89" selection-start-line="84" selection-start-column="89" selection-end-line="84" selection-end-column="89" />
-          <caret line="85" column="89" selection-start-line="85" selection-start-column="89" selection-end-line="85" selection-end-column="89" />
+        <state vertical-scroll-proportion="-8.618421">
+          <caret line="93" column="59" selection-start-line="93" selection-start-column="59" selection-end-line="93" selection-end-column="59" />
+          <caret line="95" column="60" selection-start-line="95" selection-start-column="60" selection-end-line="95" selection-end-column="60" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#2;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -868,10 +861,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7631578">
+          <caret line="14" column="135" selection-start-line="14" selection-start-column="135" selection-end-line="14" selection-end-column="135" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12451362">
-          <caret line="107" column="25" selection-start-line="107" selection-start-column="15" selection-end-line="107" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.2997003">
+          <caret line="87" column="49" selection-start-line="87" selection-start-column="49" selection-end-line="121" selection-end-column="5" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
           </folding>

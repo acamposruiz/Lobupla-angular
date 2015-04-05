@@ -1,5 +1,5 @@
 
-<section class="section-page">
+<section data-ng-init="init()" class="section-page">
   <div class="container">
     <div class="row">
       <div class="col-12 space-left push-off">
@@ -10,11 +10,11 @@
                 <img src="{{item.images[0]}}" alt="blog image">
               </div>
               <div class="col-sm-12 blog-caption">
-                <h3 class="post-title">{{item.name}}</h3>
+                <h3 class="post-title">{{item.venue.name}}</h3>
                 <div class="sub-post-title">
-                  <span>{{item.categories[0].name}}</span> <span class="separator"> / </span> <span>{{item.location.distance}} metres</span>
+                  <span>{{item.venue.categories[0].name}}</span> <span class="separator"> / </span> <span>{{item.venue.location.address}}</span>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, ipsum, optio, impedit, adipisci quis sare recusandae nostrum laboriosam mollitia dolorem ah corporis dolore repellat magnam voluptates laborum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, soluta praesentium ex aperiam deleniti iste recusandae? Non, autem nulla pariatur itaque harum!</p>
+                <p>{{item.tips[0].text}}</p>
 
               </div>
             </div>

@@ -17,7 +17,25 @@ angular.module('lobuplaApp')
   var client_id = 'WU3OIROB5N3J1U3JPWWP0EUVICAZTMDCL2MUFLM2RKZ4HZFO';
   var client_secret = 'YF3BCWYDRXLSRUOSJ24WDBKWFZMYDGS1EYF5TSHM2O35VACU';
   var apiVersion = '20150217';
-  var coordinatesFromAddress = function(address, categoryId) {
+  var addressFromCoordinates = function(latlng) {
+    var deferred = $q.defer();
+    $http({
+      url: 'http://maps.googleapis.com/maps/api/geocode/json',
+      params: {
+        sensor: 'true_or_false',
+        latlng: latlng
+      },
+      method: 'GET',
+      headers: angular.extend({
+        'X-Requested-With': undefined
+      })
+    }).
+      success(function(data){
+        deferred.resolve(data);
+      });
+    return deferred.promise;
+  };
+  var coordinatesFromAddress = function(address, section) {
     var deferred = $q.defer();
     $http({
       url: 'http://maps.googleapis.com/maps/api/geocode/json',
@@ -34,7 +52,7 @@ angular.module('lobuplaApp')
       success(function(data){
         deferred.resolve({
           coordinates: data.results[0].geometry.location.lat + ',' + data.results[0].geometry.location.lng,
-          categoryId:categoryId
+          section:section
         });
       });
     return deferred.promise;
@@ -42,12 +60,12 @@ angular.module('lobuplaApp')
   var venuesFromCoordinates = function(data) {
     var deferred = $q.defer();
     $http({
-      url: 'https://api.foursquare.com/v2/venues/search',
+      url: 'https://api.foursquare.com/v2/venues/explore',
       params: {
         client_id: client_id,
         client_secret: client_secret,
         ll: data.coordinates,
-        categoryId: data.categoryId,
+        section: data.section,
         v: apiVersion
       },
       method: 'GET',
@@ -57,19 +75,21 @@ angular.module('lobuplaApp')
       })
     }).
       success(function(data){
-        deferred.resolve(data.response.venues);
+        deferred.resolve(data.response.groups[0].items);
       });
     return deferred.promise;
   };
 
   return{
-    get: function(address, categoryId){
-      return coordinatesFromAddress(address, categoryId).then(venuesFromCoordinates);
+    get: function(address, section){
+      return coordinatesFromAddress(address, section).then(venuesFromCoordinates);
     },
+    addressFromCoordinates: addressFromCoordinates,
+    venuesFromCoordinates: venuesFromCoordinates,
     getImages: function(venue, size) {
       var deferred = $q.defer();
       $http({
-        url: 'https://api.foursquare.com/v2/venues/' + venue.id + '/photos',
+        url: 'https://api.foursquare.com/v2/venues/' + venue.venue.id + '/photos',
         params: {
           client_id: client_id,
           client_secret: client_secret,
@@ -105,61 +125,35 @@ angular.module('lobuplaApp')
 .controller('HomeCtrl', function ($scope, $cookies, $q, getVenues) {
   'use strict';
 
-  $scope.$root.categoryId = '4d4b7105d754a06374d81259';
-  $scope.$root.categories = [
-    {
-      name:'Arte y entretenimiento',
-      id:'4d4b7104d754a06370d81259'
-    },
-    {
-      name:'Facultad y Universidad',
-      id:'4d4b7105d754a06372d81259'
-    },
-    {
-      name:'Eventos',
-      id:'4d4b7105d754a06373d81259'
-    },
-    {
-      name:'Comida',
-      id:'4d4b7105d754a06374d81259'
-    },
-    {
-      name:'Local nocturno',
-      id:'4d4b7105d754a06376d81259'
-    },
-    {
-      name:'Aire libre y recreación',
-      id:'4d4b7105d754a06377d81259'
-    },
-    {
-      name:'Profesionales y otros sitios',
-      id:'4d4b7105d754a06375d81259'
-    },
-    {
-      name:'Residencia',
-      id:'4e67e38e036454776db1fb3a'
-    },
-    {
-      name:'Tienda y servicio',
-      id:'4d4b7105d754a06378d81259'
-    },
-    {
-      name:'Viajes y Transporte',
-      id:'4d4b7105d754a06379d81259'
+  $scope.init = function(){
+    navigator.geolocation.getCurrentPosition(GetLocation);
+    function GetLocation(location) {
+      getVenues.addressFromCoordinates(location.coords.latitude + ',' + location.coords.longitude).then(function(data){
+        $scope.$root.address = data.results[0].formatted_address;
+      });
+      getVenues.venuesFromCoordinates({
+        coordinates: location.coords.latitude + ',' + location.coords.longitude,
+        section: $scope.$root.section
+      }).then(resolveVenues);
     }
-  ];
+  };
+
+  var resolveVenues = function(venues) {
+    $scope.venues.context = venues;
+    angular.forEach(venues, function(venue, key) {
+      getVenues.getImages(venue, '1280x500').then(function(images){
+        $scope.venues.context[key].images = images;
+      });
+    });
+  };
+
+  $scope.$root.section = 'food';
+  $scope.$root.sections = ['food', 'drinks', 'coffee', 'shops', 'arts', 'outdoors', 'sights', 'trending', 'specials', 'topPicks'];
+
   $scope.$root.venues = {
-    search: function(address, categoryId) {
+    search: function(address, section) {
       $scope.address = address;
-      getVenues.get(address, categoryId)
-        .then(function(venues) {
-          $scope.venues.context = venues;
-          angular.forEach(venues, function(venue, key) {
-            getVenues.getImages(venue, '1280x500').then(function(images){
-              $scope.venues.context[key].images = images;
-            });
-          });
-        });
+      getVenues.get(address, section).then(resolveVenues);
     }
   };
 });

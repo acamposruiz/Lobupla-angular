@@ -81,9 +81,9 @@
       <div class="row pull-center margin20">
         <div class="tp-caption sft stt start" data-x="center" data-hoffset="0" data-y="center" data-voffset="-45" data-speed="600" data-start="300" data-endspeed="400" data-end="7950" data-easing="Power4.easeOut" style="z-index: 3; -webkit-transition: all 0s ease 0s; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 26px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 14px; left: 617px; top: 206px; visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1);">
           <ul class="list-inline">
-            <li data-ng-click="$parent.categoryId=category.id" data-ng-repeat="category in categories">
-              <button data-ng-show="category.id !== $parent.categoryId" class="btn btn-c">{{category.name}}</button>
-              <button data-ng-show="category.id === $parent.categoryId" class="btn btn-a">{{category.name}}</button>
+            <li data-ng-click="$parent.section=item" data-ng-repeat="item in sections">
+              <button data-ng-show="item !== section" class="btn btn-c">{{item}}</button>
+              <button data-ng-show="item === section" class="btn btn-a">{{item}}</button>
             </li>
           </ul>
         </div>
@@ -91,9 +91,9 @@
       <div class="row display-inline">
         <div class="search-form pull-center">
           <div  class="pull-center">
-            <input ng-enter="venues.search(address, categoryId)" type="search" ng-model="address" class="input-search" placeholder="Search and hit enter">
+            <input ng-enter="venues.search(address, section)" type="search" ng-model="address" class="input-search" placeholder="Search and hit enter">
             <br/>
-            <button ng-click="venues.search(address, categoryId)" id="send" class="btn btn-f send">Search</button>
+            <button ng-click="venues.search(address, section)" id="send" class="btn btn-f send">Search</button>
           </div>
         </div>
       </div>
