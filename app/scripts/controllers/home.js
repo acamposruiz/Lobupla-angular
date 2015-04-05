@@ -67,6 +67,8 @@ angular.module('lobuplaApp')
         ll: data.coordinates,
         section: data.section,
         venuePhotos: 1,
+        sortByDistance: 1,
+        radius: 300,
         v: apiVersion
       },
       method: 'GET',

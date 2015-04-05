@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48b8fa18-2dda-4661-995f-34bd5d96af89" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home.html" afterPath="$PROJECT_DIR$/app/views/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/home.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="api.lobupla2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,21 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1381781">
+            <state vertical-scroll-proportion="-1.7763158">
               <caret line="9" column="84" selection-start-line="9" selection-start-column="84" selection-end-line="9" selection-end-column="84" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.769231">
-              <caret line="108" column="35" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.5244755">
+              <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
               <folding>
                 <element signature="e#63#350#0" expanded="false" />
               </folding>
@@ -145,8 +145,8 @@
         <option value="$PROJECT_DIR$/app/palas/css/style.css" />
         <option value="$PROJECT_DIR$/app/palas/css/style2.css" />
         <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/home.js" />
         <option value="$PROJECT_DIR$/app/views/home.html" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/home.js" />
       </list>
     </option>
   </component>
@@ -497,7 +497,7 @@
           <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2515#0" expanded="false" />
+            <element signature="e#394#2563#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -523,7 +523,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2515#0" expanded="false" />
+            <element signature="e#394#2563#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -534,7 +534,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2515#0" expanded="false" />
+            <element signature="e#394#2563#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -545,7 +545,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2515#0" expanded="false" />
+            <element signature="e#394#2563#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -556,7 +556,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2515#0" expanded="false" />
+            <element signature="e#394#2563#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -567,7 +567,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2515#0" expanded="false" />
+            <element signature="e#394#2563#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -578,7 +578,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2515#0" expanded="false" />
+            <element signature="e#394#2563#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -589,7 +589,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2515#0" expanded="false" />
+            <element signature="e#394#2563#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -600,7 +600,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2515#0" expanded="false" />
+            <element signature="e#394#2563#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -611,7 +611,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2515#0" expanded="false" />
+            <element signature="e#394#2563#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -622,7 +622,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2515#0" expanded="false" />
+            <element signature="e#394#2563#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -633,7 +633,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2515#0" expanded="false" />
+            <element signature="e#394#2563#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -644,7 +644,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
-            <element signature="e#394#2515#0" expanded="false" />
+            <element signature="e#394#2563#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -846,6 +846,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.7763158">
+          <caret line="9" column="84" selection-start-line="9" selection-start-column="84" selection-end-line="9" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.618421">
@@ -861,19 +869,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.769231">
-          <caret line="108" column="35" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.5244755">
+          <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
           <folding>
             <element signature="e#63#350#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1381781">
-          <caret line="9" column="84" selection-start-line="9" selection-start-column="84" selection-end-line="9" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>
