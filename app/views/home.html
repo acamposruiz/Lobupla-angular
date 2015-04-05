@@ -6,8 +6,8 @@
         <div class="row blog-list">
           <div ng-repeat="item in venues.context" class="col-sm-12">
             <div class="row blog-item">
-              <div data-ng-if="item.images" class="col-sm-12 blog-image col-p0">
-                <img src="{{item.images[0]}}" alt="blog image">
+              <div data-ng-if="item.venue.photos.groups[0].items[0]" class="col-sm-12 blog-image col-p0">
+                <img src="{{item.venue.photos.groups[0].items[0].prefix + '1280x500' + item.venue.photos.groups[0].items[0].suffix}}" alt="blog image">
               </div>
               <div class="col-sm-12 blog-caption">
                 <h3 class="post-title">{{item.venue.name}}</h3>

@@ -66,6 +66,7 @@ angular.module('lobuplaApp')
         client_secret: client_secret,
         ll: data.coordinates,
         section: data.section,
+        venuePhotos: 1,
         v: apiVersion
       },
       method: 'GET',
@@ -85,41 +86,7 @@ angular.module('lobuplaApp')
       return coordinatesFromAddress(address, section).then(venuesFromCoordinates);
     },
     addressFromCoordinates: addressFromCoordinates,
-    venuesFromCoordinates: venuesFromCoordinates,
-    getImages: function(venue, size) {
-      var deferred = $q.defer();
-      $http({
-        url: 'https://api.foursquare.com/v2/venues/' + venue.venue.id + '/photos',
-        params: {
-          client_id: client_id,
-          client_secret: client_secret,
-          v: apiVersion
-        },
-        method: 'GET',
-        //data: data,
-        headers: angular.extend({
-          'X-Requested-With': undefined
-        })
-      }).
-      success(function(data){
-        try {
-          if(data.response.photos.count > 0){
-            var images = [];
-            angular.forEach(data.response.photos.items, function(item, key) {
-              images.push(item.prefix + size + item.suffix);
-            });
-            deferred.resolve(images);
-          }
-          else {
-            deferred.resolve(null);
-          }
-        }
-        catch(err) {
-          deferred.resolve(null);
-        }
-      });
-      return deferred.promise;
-    }
+    venuesFromCoordinates: venuesFromCoordinates
   };
 })
 .controller('HomeCtrl', function ($scope, $cookies, $q, getVenues) {
@@ -140,11 +107,6 @@ angular.module('lobuplaApp')
 
   var resolveVenues = function(venues) {
     $scope.venues.context = venues;
-    angular.forEach(venues, function(venue, key) {
-      getVenues.getImages(venue, '1280x500').then(function(images){
-        $scope.venues.context[key].images = images;
-      });
-    });
   };
 
   $scope.$root.section = 'food';
