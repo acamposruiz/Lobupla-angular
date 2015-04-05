@@ -44,3 +44,13 @@
 .margin55 {
   margin: 55px;
 }
+
+
+section.header .btn-c {
+  color: white;
+  border-color: white;
+}
+
+section.header li {
+  padding: 5px;
+}
