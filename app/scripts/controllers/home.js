@@ -94,7 +94,17 @@ angular.module('lobuplaApp')
 .controller('HomeCtrl', function ($scope, $cookies, $q, getVenues) {
   'use strict';
 
+  var resolveVenues = function(venues) {
+    $scope.venues.context = venues;
+    $scope.$root.preloader = false;
+  };
+
+  $scope.$root.section = 'food';
+  $scope.$root.sections = ['food', 'drinks', 'coffee', 'shops', 'arts', 'outdoors', 'sights', 'trending', 'specials', 'topPicks'];
+
   $scope.init = function(){
+
+    $scope.$root.preloader = true;
     navigator.geolocation.getCurrentPosition(GetLocation);
     function GetLocation(location) {
       getVenues.addressFromCoordinates(location.coords.latitude + ',' + location.coords.longitude).then(function(data){
@@ -107,15 +117,9 @@ angular.module('lobuplaApp')
     }
   };
 
-  var resolveVenues = function(venues) {
-    $scope.venues.context = venues;
-  };
-
-  $scope.$root.section = 'food';
-  $scope.$root.sections = ['food', 'drinks', 'coffee', 'shops', 'arts', 'outdoors', 'sights', 'trending', 'specials', 'topPicks'];
-
   $scope.$root.venues = {
     search: function(address, section) {
+      $scope.$root.preloader = true;
       $scope.address = address;
       getVenues.get(address, section).then(resolveVenues);
     }

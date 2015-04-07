@@ -7,9 +7,9 @@
  	03. Vertical / Full Screen Menu
  	03. Fixed Header
  	04. Slider configurations
- 	05. Plugins configurations 
+ 	05. Plugins configurations
  		#
- 		Stellar, Flickr Feed, Zoom, Raty, Range Slider, Text Rotator, 
+ 		Stellar, Flickr Feed, Zoom, Raty, Range Slider, Text Rotator,
  		Bootstrap config, Twitter feed, CountTo, MagnificPopup, Sharrre
  		#
  	06. Carousels configurations (owl-carousel)
@@ -39,17 +39,17 @@
 
 	var $win = $(window),
 
-		// body 
+		// body
 		$body = $('body'),
 
 		// Window width (without scrollbar)
 		$windowWidth = $win.width(),
 
-		// Media Query fix (outerWidth -- scrollbar) 
+		// Media Query fix (outerWidth -- scrollbar)
 		// Media queries width include the scrollbar
 		mqWidth = $win.outerWidth(true,true),
 
-		// Detect Mobile Devices 
+		// Detect Mobile Devices
 		isMobileDevice = (( navigator.userAgent.match(/Android|webOS|iPhone|iPad|iPod|BlackBerry|Windows Phone|IEMobile|Opera Mini|Mobi/i) || (mqWidth < 767) ) ? true : false );
 
 		// detect IE browsers
@@ -70,7 +70,7 @@
 
 		    return ((rv > 0) ? rv : 0);
 		}());
-	
+
 
 
 /* *********************	Megamenu	********************* */
@@ -84,10 +84,10 @@
 				menu.children(".toggle-menu").hide(0);
 
 				// Mobile touch for tablets > 768px
-				if (isMobileDevice) {						
-					
+				if (isMobileDevice) {
+
 					menu.on("click touchstart","a", function(e){
-						
+
 						if ($(this).attr('href') === '#') {
 							e.preventDefault();
 							e.stopPropagation();
@@ -107,13 +107,13 @@
 					});
 
 					$(document).on("click.menu touchstart.menu", function(e){
-						
+
 						if ($(e.target).closest(menu).length === 0) {
 							menu.find(".submenu, .megamenu").fadeOut(300);
 						}
 					});
-					
-				// Desktop hover effect	
+
+				// Desktop hover effect
 				} else {
 
 					menu.find('li').on({
@@ -125,10 +125,10 @@
 						}
 					});
 				}
-			}, 
+			},
 			mobileMenu: function() {
 
-				var $children = menu.children("li"), 
+				var $children = menu.children("li"),
 					$toggle = menu.children("li.toggle-menu"),
 					$notToggle = $children.not("toggle-menu");
 
@@ -150,7 +150,7 @@
 					var $this = $(this);
 
 					if ($this.children(".submenu, .megamenu").length) {
-						
+
 						$this.children("a").on("click", function(e){
 
 							if ($(this).attr('href') === '#') {
@@ -166,7 +166,7 @@
 								$sub.slideDown(300).addClass("open");
 							}
 						});
-					} 
+					}
 				});
 			},
 			unbindEvents: function() {
@@ -189,7 +189,7 @@
 
 /* *********************	Vertical / Fullscreen Menu	********************* */
 
-	// Vertical / Fullscreen Menu Trigger 
+	// Vertical / Fullscreen Menu Trigger
 	$('#menu-trigger').on("click",function() {
 
 		if ($(this).hasClass('fullscreen-trigger')) {
@@ -202,7 +202,7 @@
 			$(".vertical-menu-wrapper").toggleClass("on");
 			$(".vertical-menu-footer").toggleClass("on");
 		}
-		
+
 		$(this).toggleClass("menu-close");
 		return false;
 	});
@@ -213,7 +213,7 @@
 /* *********************	Fixed Header	********************* */
 
 	function fixedHeader() {
-      	$(".main-header").sticky({ 
+      	$(".main-header").sticky({
       		topSpacing: 0,
       		className:"menu-fixed"
       	});
@@ -242,7 +242,7 @@
 			onHoverStop:"off",
 			shadow:"3"
 		});
-	} 
+	}
 
 	if ($('.rs_fullscreen').length) {
 		jQuery('.tp-banner').revolution({
@@ -259,9 +259,9 @@
 			hideTimerBar:"on"
 
 		});
-	} 
+	}
 
-	if ($('.rs_fullwidth').length) { 
+	if ($('.rs_fullwidth').length) {
 		jQuery('.tp-banner').revolution({
 			delay:9000,
 			startwidth:1170,
@@ -291,9 +291,9 @@
 			hideTimerBar:"on",
 			videoloop:"loop"
 		});
-	} 
+	}
 
-	if ($('.rs_fullwidth_video').length) { 
+	if ($('.rs_fullwidth_video').length) {
 		jQuery('.tp-banner').revolution({
 			delay:9000,
 			startwidth:1170,
@@ -311,12 +311,12 @@
 
 
 /* *********************	Plugins config	********************* */
-/* Text Rotator, Stellar, Flickr Feed, Zoom, Raty, Range Slider, 
+/* Text Rotator, Stellar, Flickr Feed, Zoom, Raty, Range Slider,
    CountTo, Magnific Popup, Sharrre */
 
 
 
-    // Text Rotator 
+    // Text Rotator
     if ($().textrotator && $(".rotate")) {
 	    $(".rotate").textrotator({
 			animation: "dissolve", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
@@ -326,7 +326,7 @@
 	}
 
 
-	// Stellar - Parallax backgrounds 
+	// Stellar - Parallax backgrounds
 	if ( ($(".stellar").length) && $(window).width() > 767 ) {
 
 		$body.stellar({
@@ -338,7 +338,7 @@
 			parallaxElements: false
 		});
 	}
-	
+
 
 	// FLickr Feed plugin
 	if ( ($(".flickr-feed").length) && $().jflickrfeed ) {
@@ -378,9 +378,9 @@
 
 
 
-	// Raty plugin configurations 
+	// Raty plugin configurations
 	if (($().raty) && $(".rating-system").length ) {
-		
+
 		// Rate product
 		$(".rating-system.rate-product").raty({
 			starOn:"plugins/raty/img/star-on.png",
@@ -407,7 +407,7 @@
 	}
 
 
-	// Range Slider configarations 
+	// Range Slider configarations
 	if (($().ionRangeSlider) && $(".range-slider").length) {
 		$(".range-slider.range-price").ionRangeSlider({
 		    min: 0,
@@ -460,7 +460,7 @@
 	            enabled: true,
 	            navigateByImgClick: true,
 	            preload: [0,1],
-	            tCounter: '<span class="mfp-counter">%curr% / %total%</span>' 
+	            tCounter: '<span class="mfp-counter">%curr% / %total%</span>'
 	        },
 	        image: {
 	            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
@@ -485,9 +485,9 @@
 		});
 	}
 
-   
 
-	// Sharrre plugin 
+
+	// Sharrre plugin
 	if (($().sharrre) && $(".sharrre").length) {
 
 		$("#shareit").sharrre({
@@ -498,7 +498,7 @@
 			},
 			enableHover:false,
 			urlCurl:"../plugins/sharrre/sharrre.php",
-			enableTracking:((typeof(_gaq) != 'undefined') ? true : false), 
+			enableTracking:((typeof(_gaq) != 'undefined') ? true : false),
 			template:"<ul class='social-icon intro-share'><li><a href='#'><i class='fa fa-facebook'></i></a></li><li><a href='#'><i class='fa fa-twitter'></i></a></li><li><a href='#'><i class='fa fa-google-plus'></i></a></li></ul>",
 			render: function(api, options) {
 				$(api.element).on("click",".fa-twitter",function() {
@@ -517,10 +517,10 @@
 
 
 	// Bootstrap configarations
-	// Tooltips 
+	// Tooltips
 	if ( $().tooltip ) {
 		$("[data-toggle='tooltip']").tooltip();
-	} 
+	}
 	// Popovers
 	if ( $().popover ) {
 		$("[data-toggle='popover']").popover();
@@ -579,7 +579,7 @@
 				autoplay:false
 			});
 
-		} // END if 
+		} // END if
 
 	});
 
@@ -634,7 +634,7 @@
 		$(".html5vid").append($("<div class='bg-overlay op4' style='z-index:5'></div>"));
 	});
 
-	// Max Height 
+	// Max Height
 	function max_height() {
 		$(".max_height").each(function() {
 			var maxHeight = 0;
@@ -653,7 +653,7 @@
 
 
 
-	// Fix column sibling height 
+	// Fix column sibling height
 	function fixHeight() {
 		$(".data-height-fix").each(function() {
 			var siblingHeight = $(this).find($(".get-height")).outerHeight();
@@ -664,19 +664,19 @@
 	fixHeight();
 
 
-	// Notifications 
+	// Notifications
 	$("#show_notification").on("click",function() {
 		$(".alert-modal").addClass('alert-modal-on');
 		return false;
 	});
 
-	// Toggles upside-down 
+	// Toggles upside-down
 	$(".panel-title").on("click","a",function() {
 		$(this).find(".fa").toggleClass("upside-down");
 	});
 
 
-	// Body full height 
+	// Body full height
 	function setWindowHeight() {
 		var windowHeight = $(window).height();
 		$(".window-fullheight").css("height",windowHeight);
@@ -715,7 +715,7 @@
 	rsEmbed();
 
 
-	// Fix IE9 placeholder 
+	// Fix IE9 placeholder
 	if (ie === 9) {
 		$.getScript('../plugins/jquery.placeholder.js',function() {
 			$('input, textarea').placeholder();
@@ -761,7 +761,7 @@
 
 		var $this = $(this);
 
-		if (($().appear) && (isMobileDevice === false) && ($this.hasClass("no-anim") === false) ) {	
+		if (($().appear) && (isMobileDevice === false) && ($this.hasClass("no-anim") === false) ) {
 
 			$this.appear(function () {
 
@@ -876,7 +876,7 @@
 			return false;
 		});
 
-	} // END if 
+	} // END if
 
 
 
@@ -892,15 +892,15 @@
 
 			initialize: function() {
 
-				// if form is already initialized, skip 
-				if (this.init) { 
-					return; 
-				} 
+				// if form is already initialized, skip
+				if (this.init) {
+					return;
+				}
 				this.init = true;
 
 
 				var $form = $(".ajax-contact-form");
-			
+
 				$form.validate({
 					submitHandler: function(form) {
 
@@ -924,7 +924,7 @@
 							success: function(data) {
 
 								var $success = $form.find("#contact-success"),
-									$error = $form.find("#contact-error"); 
+									$error = $form.find("#contact-error");
 
 								if (data.response == "success") {
 
@@ -1018,9 +1018,9 @@
 
 		if ($("#preloader").length) {
 
-			$('#status').fadeOut(); 
+			$('#status').fadeOut();
 			$('#preloader').delay(300).fadeOut('slow');
-			$body.delay(300).css({'overflow':'visible'}); 
+			$body.delay(300).css({'overflow':'visible'});
 
 		} // END if
 
@@ -1039,7 +1039,7 @@
 	    	 window.clearTimeout(globalResizeTimer);
 	    }
 	    globalResizeTimer = window.setTimeout(function() {
-			
+
 
 			var mqWidth = $win.outerWidth(true,true),
 
@@ -1069,7 +1069,7 @@
 			// Set the same height to siblings (just 2)
 			fixHeight();
 
-			// Set the maximum height of multiple siblings 
+			// Set the maximum height of multiple siblings
 			max_height();
 
 

@@ -9,6 +9,9 @@
 }
 
 
+body {
+  overflow: visible;
+}
 
 .margin5 {
   margin: 5px;
@@ -53,4 +56,15 @@ section.header .btn-c {
 
 section.header li {
   padding: 5px;
+}
+
+#preloader {
+  opacity: 0.9;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+}
+
+#preloader.off {
+  visibility: hidden;
+  opacity: 0;
 }
