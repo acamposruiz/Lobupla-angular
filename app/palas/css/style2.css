@@ -59,7 +59,7 @@ section.header li {
 }
 
 #preloader {
-  opacity: 0.9;
+  opacity: 1;
   transition: all 1s;
   -webkit-transition: all 1s;
 }
@@ -67,4 +67,13 @@ section.header li {
 #preloader.off {
   visibility: hidden;
   opacity: 0;
+}
+
+.section-intro {
+  position: relative;
+  padding: 20px 0 20px;
+}
+
+.op6 {
+  opacity: 0.95 !important;
 }
