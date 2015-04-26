@@ -12,27 +12,44 @@ angular.module('lobuplaApp')
       });
     };
   })
-  .controller('HomeCtrl', function ($scope, $cookies, $q, getVenues, SECTIONS) {
+  .factory('defaultSearch', function(SECTIONS, venuesFromCoordinates, addressFromCoordinates) {
+    'use strict';
+    return{
+      get: function(scope, callback){
+        navigator.geolocation.getCurrentPosition(GetLocation);
+        function GetLocation(location) {
+          addressFromCoordinates(location.coords.latitude + ',' + location.coords.longitude).then(function(data){
+            scope.address = data.results[0].formatted_address;
+          });
+          venuesFromCoordinates({
+            coordinates: location.coords.latitude + ',' + location.coords.longitude,
+            section: SECTIONS.all[0]
+          }).then(callback);
+        }
+      }
+    };
+  })
+  .controller('HomeCtrl', function ($scope, getVenues, SECTIONS, defaultSearch) {
     'use strict';
 
     var resolveVenues = function(venues) {
       $scope.venues.context = venues;
-      $scope.$root.preloader = false;
+      $scope.preloader = false;
     };
 
-    $scope.$root.sections = SECTIONS.all;
-    $scope.$root.section = SECTIONS.all[0];
+    $scope.sections = SECTIONS.all;
+    $scope.section = SECTIONS.all[0];
 
     $scope.init = function(){
-      $scope.$root.preloader = true;
-      getVenues.defaultSearch($scope.$root, resolveVenues);
+      $scope.preloader = true;
+      defaultSearch.get($scope.$root, resolveVenues);
     };
 
-    $scope.$root.venues = {
+    $scope.venues = {
       search: function(address, section) {
-        $scope.$root.preloader = true;
+        $scope.preloader = true;
         $scope.address = address;
-        getVenues.get(address, section).then(resolveVenues);
+        getVenues(address, section).then(resolveVenues);
       }
     };
   });

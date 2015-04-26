@@ -28,9 +28,7 @@ module.exports = function(config) {
 
     // list of files / patterns to exclude
     exclude: [
-      'test/spec/controllers/main.js',
-      'test/spec/controllers/home.js',
-      'test/spec/controllers/home2.js',
+      'test/spec/controllers/home.js'
     ],
 
     // web server port

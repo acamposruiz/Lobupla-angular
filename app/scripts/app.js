@@ -6,6 +6,7 @@ angular.module('lobuplaApp', [
   'angular-foursquare-api'
 ])
   .value('angular_foursquare_conf', {
+    limit: 5,
     client_id: 'WU3OIROB5N3J1U3JPWWP0EUVICAZTMDCL2MUFLM2RKZ4HZFO',
     client_secret: 'YF3BCWYDRXLSRUOSJ24WDBKWFZMYDGS1EYF5TSHM2O35VACU'
   })
@@ -15,7 +16,7 @@ angular.module('lobuplaApp', [
     $urlRouterProvider.otherwise('/');
     $stateProvider
       .state('index', {
-        url: '/home',
+        url: '/',
         templateUrl: 'views/home.html',
         controller: 'HomeCtrl'
       });

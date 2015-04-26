@@ -1,3 +1,13 @@
+<div ng-include="'preloader.htm'"></div>
+
+<div ng-include="'logo.htm'"></div>
+
+
+<!-- Do not remove this class -->
+<div class="push-top"></div>
+
+<div ng-include="'search.htm'"></div>
+
 
 <section data-ng-init="init()" class="section-page">
   <div class="container">
@@ -7,10 +17,13 @@
           <div ng-repeat="item in venues.context" class="col-sm-12">
             <div class="row blog-item">
               <div data-ng-if="item.venue.photos.groups[0].items[0]" class="col-sm-12 blog-image col-p0">
-                <img src="{{item.venue.photos.groups[0].items[0].prefix + '1280x500' + item.venue.photos.groups[0].items[0].suffix}}" alt="blog image">
+                <img
+                  src="{{item.venue.photos.groups[0].items[0].prefix + '1280x500' + item.venue.photos.groups[0].items[0].suffix}}"
+                  alt="blog image">
               </div>
               <div class="col-sm-12 blog-caption">
                 <h3 class="post-title">{{item.venue.name}}</h3>
+
                 <div class="sub-post-title">
                   <span>{{item.venue.categories[0].name}}</span> <span class="separator"> / </span> <span>{{item.venue.location.address}}</span>
                 </div>
@@ -18,9 +31,11 @@
 
               </div>
             </div>
-          </div> <!-- END Blog Item -->
+          </div>
+          <!-- END Blog Item -->
 
-        </div> <!-- END Blog Posts -->
+        </div>
+        <!-- END Blog Posts -->
         <div class="row">
           <div class="col-sm-12">
             <ul class="pagination pagination-2 dark">
@@ -38,3 +53,6 @@
     </div>
   </div>
 </section> <!-- END Blog Page-->
+
+<div ng-include="'footer.htm'"></div>
+
