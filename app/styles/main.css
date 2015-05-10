@@ -20,3 +20,15 @@ body {
     line-height: 1;
     letter-spacing: -1px;
 }
+
+.angular-google-map-container { height: 400px; }
+
+
+@font-face {
+  font-family: 'map-icons';
+  src: url('../bower_components/map-icons/fonts/map-icons.eot'); /* IE9 Compat Modes */
+  src: url('../bower_components/map-icons/fonts/map-icons.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../bower_components/map-icons/fonts/map-icons.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../bower_components/map-icons/fonts/map-icons.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('../bower_components/map-icons/fonts/map-icons.svg#svgFontName') format('svg'); /* Legacy iOS */
+}

@@ -9,7 +9,9 @@
     "angular-cookies": "~1.0.7",
     "angular-sanitize": "~1.0.7",
     "angular-ui-router": "latest",
-    "angular-foursquare-api": "latest"
+    "angular-foursquare-api": "latest",
+    "angular-google-maps": "~2.0.19",
+    "map-icons": "*"
   },
   "devDependencies": {
     "angular-mocks": "*",

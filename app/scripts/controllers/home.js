@@ -12,44 +12,61 @@ angular.module('lobuplaApp')
       });
     };
   })
-  .factory('defaultSearch', function(SECTIONS, venuesFromCoordinates, addressFromCoordinates) {
+  .factory('maps', function($rootScope){
     'use strict';
-    return{
-      get: function(scope, callback){
-        navigator.geolocation.getCurrentPosition(GetLocation);
-        function GetLocation(location) {
-          addressFromCoordinates(location.coords.latitude + ',' + location.coords.longitude).then(function(data){
-            scope.address = data.results[0].formatted_address;
+    return {
+      renderMap: function(lat, long){
+        $rootScope.map = { center: { latitude: lat, longitude: long }, zoom: 16, icon:"../palas/images/man13.png" };
+        $rootScope.marker = { coordenates: { latitude: lat, longitude: long }, icon:"../palas/images/man13.png" };
+      },
+      paintMarks: function(venues) {
+        $rootScope.markers = [];
+        angular.forEach(venues, function(item){
+          $rootScope.markers.push({
+            latitude: item.venue.location.lat,
+            longitude: item.venue.location.lng,
+            id: item.venue.id,
+            title: item.venue.name
           });
-          venuesFromCoordinates({
-            coordinates: location.coords.latitude + ',' + location.coords.longitude,
-            section: SECTIONS.all[0]
-          }).then(callback);
-        }
+        });
       }
     };
   })
-  .controller('HomeCtrl', function ($scope, getVenues, SECTIONS, defaultSearch) {
+  .controller('HomeCtrl', function ($rootScope, $scope, getVenues, SECTIONS, addressFromCoordinates, venuesFromCoordinates, maps) {
     'use strict';
 
-    var resolveVenues = function(venues) {
-      $scope.venues.context = venues;
+    $scope.init = function(){
+      $scope.sections = SECTIONS.all;
+      $scope.section = SECTIONS.all[0];
+      defaultSearch();
+    };
+
+    $scope.searchVenues =  function(address, section) {
+      $scope.preloader = true;
+      $scope.address = address;
+      getVenues(address, section).then(resolveVenues);
+    };
+
+    var defaultSearch = function(){
+      $scope.preloader = true;
+      navigator.geolocation.getCurrentPosition(GetLocation);
+      function GetLocation(location) {
+        maps.renderMap(location.coords.latitude, location.coords.longitude);
+        addressFromCoordinates(location.coords.latitude + ',' + location.coords.longitude).then(function(data){
+          $scope.address = data.results[0].formatted_address;
+        });
+        venuesFromCoordinates({
+          lat: location.coords.latitude,
+          lng: location.coords.longitude,
+          section: SECTIONS.all[0]
+        }).then(resolveVenues);
+      }
+    };
+
+    var resolveVenues = function(data) {
+      $scope.venues = data.venues;
+      maps.paintMarks(data.venues);
       $scope.preloader = false;
     };
 
-    $scope.sections = SECTIONS.all;
-    $scope.section = SECTIONS.all[0];
-
-    $scope.init = function(){
-      $scope.preloader = true;
-      defaultSearch.get($scope.$root, resolveVenues);
-    };
-
-    $scope.venues = {
-      search: function(address, section) {
-        $scope.preloader = true;
-        $scope.address = address;
-        getVenues(address, section).then(resolveVenues);
-      }
-    };
   });
