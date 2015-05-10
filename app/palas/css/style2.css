@@ -79,3 +79,9 @@ section.header li {
 }
 
 .angular-google-map-container { height: 400px; }
+
+.list-venues {
+  padding-top: 10px;
+}
+.list-venues .item {
+}

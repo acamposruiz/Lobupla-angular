@@ -2,62 +2,79 @@
 
 <div ng-include="'logo.htm'"></div>
 
-
 <!-- Do not remove this class -->
 <div class="push-top"></div>
 
-<div ng-include="'search.htm'"></div>
+<section class="header section-intro bg-img bg18 stellar" data-stellar-background-ratio="0.4">
+  <div class="bg-overlay op6"></div>
+  <div class="row pull-center margin20">
+    <div class="tp-caption sft stt start" data-x="center" data-hoffset="0" data-y="center" data-voffset="-45"
+         data-speed="600" data-start="300" data-endspeed="400" data-end="7950" data-easing="Power4.easeOut"
+         style="z-index: 3; -webkit-transition: all 0s ease 0s; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 26px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 14px; left: 617px; top: 206px; visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1);">
+      <h3 class="title-slider-small uppercased mb10">an easy way to find your local business</h3>
 
-<ui-gmap-google-map center='map.center' zoom='map.zoom' pan="1">
-<ui-gmap-marker idKey='1234' coords='marker.coordenates' icon='marker.icon' options="marker.options"> </ui-gmap-marker>
-  <ui-gmap-markers models="markers" coords="'self'">
-  </ui-gmap-markers>
-</ui-gmap-google-map>
-
-<section data-ng-init="init()" class="section-page">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 space-left push-off">
-        <div class="row blog-list">
-          <div ng-repeat="item in venues" class="col-sm-12">
-            <div class="row blog-item">
-              <div data-ng-if="item.venue.photos.groups[0].items[0]" class="col-sm-12 blog-image col-p0">
-                <img
-                  src="{{item.venue.photos.groups[0].items[0].prefix + '1280x500' + item.venue.photos.groups[0].items[0].suffix}}"
-                  alt="blog image">
-              </div>
-              <div class="col-sm-12 blog-caption">
-                <h3 class="post-title">{{item.venue.name}}</h3>
-
-                <div class="sub-post-title">
-                  <span>{{item.venue.categories[0].name}}</span> <span class="separator"> / </span> <span>{{item.venue.location.address}}</span>
-                </div>
-                <p>{{item.tips[0].text}}</p>
-
-              </div>
-            </div>
-          </div>
-          <!-- END Blog Item -->
-
-        </div>
-        <!-- END Blog Posts -->
-        <div class="row">
-          <div class="col-sm-12">
-            <ul class="pagination pagination-2 dark">
-              <li class="disabled"><a href="#"><i class="fa fa-chevron-left"></i></a></li>
-              <li class="active"><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
-            </ul>
-          </div>
-        </div>
+      <div class="br-bottom-center"></div>
+    </div>
+  </div>
+  <div class="row pull-center margin20">
+    <div class="tp-caption sft stt start" data-x="center" data-hoffset="0" data-y="center" data-voffset="-45"
+         data-speed="600" data-start="300" data-endspeed="400" data-end="7950" data-easing="Power4.easeOut"
+         style="z-index: 3; -webkit-transition: all 0s ease 0s; transition: all 0s ease 0s; min-height: 0px; min-width: 0px; line-height: 26px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 14px; left: 617px; top: 206px; visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.0025, 0, 0, 0, 1);">
+      <ul class="list-inline">
+        <li data-ng-click="$parent.section=item" data-ng-repeat="item in sections">
+          <button data-ng-show="item !== section" class="btn btn-c">{{item}}</button>
+          <button data-ng-show="item === section" class="btn btn-a">{{item}}</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row display-inline">
+    <div class="search-form pull-center">
+      <div class="pull-center">
+        <input ng-enter="searchVenues(address, section, true)" type="search" ng-model="address" class="input-search"
+               placeholder="Search and hit enter">
+        <br/>
+        <button ng-click="searchVenues(address, section, true)" id="send" class="btn btn-f send">Search</button>
       </div>
     </div>
   </div>
-</section> <!-- END Blog Page-->
+</section>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6 col-xs-12">
+      <ui-gmap-google-map center='map.center' zoom='map.zoom' pan="1">
+        <ui-gmap-marker idKey='1234' coords='marker.coordenates' icon='marker.icon' options="marker.options"> </ui-gmap-marker>
+        <ui-gmap-markers models="markers" coords="'self'">
+        </ui-gmap-markers>
+      </ui-gmap-google-map>
+    </div>
+    <div data-ng-init="init()" class="list-venues col-sm-6 col-xs-12">
+      <div ng-include="'pagination.htm'"></div>
+
+      <div ng-repeat="item in venues" class="item">
+        <div class="row blog-item">
+          <div data-ng-if="item.venue.photos.groups[0].items[0]" class="col-xs-2 blog-image col-p0">
+            <img
+              src="{{item.venue.photos.groups[0].items[0].prefix + '65x65' + item.venue.photos.groups[0].items[0].suffix}}"
+              alt="blog image">
+          </div>
+          <div class="col-xs-10 ">
+            <h3 class="post-title">{{item.venue.name}}</h3>
+
+            <div class="sub-post-title">
+              <span>{{item.venue.categories[0].name}}</span> <span data-ng-show="item.venue.location.address && item.venue.categories[0].name" class="separator"> / </span> <span>{{item.venue.location.address}}</span>
+            </div>
+            <p>{{item.tips[0].text}}</p>
+
+          </div>
+        </div>
+      </div>
+      <div ng-include="'pagination.htm'"></div>
+    </div>
+  </div>
+
+</div>
 
 <div ng-include="'footer.htm'"></div>
 

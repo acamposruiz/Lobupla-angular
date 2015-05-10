@@ -32,16 +32,18 @@ angular.module('lobuplaApp')
       }
     };
   })
-  .controller('HomeCtrl', function ($rootScope, $scope, getVenues, SECTIONS, addressFromCoordinates, venuesFromCoordinates, maps) {
+  .controller('HomeCtrl', function ($rootScope, $scope, getVenues, SECTIONS, addressFromCoordinates, venuesFromCoordinates, maps, angular_foursquare_conf) {
     'use strict';
 
     $scope.init = function(){
       $scope.sections = SECTIONS.all;
       $scope.section = SECTIONS.all[0];
+      $rootScope.offset = 0;
       defaultSearch();
     };
 
-    $scope.searchVenues =  function(address, section) {
+    $scope.searchVenues =  function(address, section, initialize) {
+      (initialize)? $rootScope.offset = 0:false;
       $scope.preloader = true;
       $scope.address = address;
       getVenues(address, section).then(resolveVenues);
@@ -67,6 +69,16 @@ angular.module('lobuplaApp')
       $scope.venues = data.venues;
       maps.paintMarks(data.venues);
       $scope.preloader = false;
+    };
+
+    $scope.next = function() {
+      $rootScope.offset += angular_foursquare_conf.limit;
+      $scope.searchVenues($scope.address, $scope.section);
+    };
+
+    $scope.previous = function() {
+      $rootScope.offset -= angular_foursquare_conf.limit;
+      $scope.searchVenues($scope.address, $scope.section);
     };
 
   });
